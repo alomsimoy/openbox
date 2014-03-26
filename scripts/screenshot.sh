@@ -1,0 +1,1 @@
+import -window root ~/Imágenes/Capturas\ de\ pantalla/`date +%F_%H%M%S`.jpg

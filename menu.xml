@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+	<menu id="apps-accessories-menu" label="Accesorios">
+		<item label="Editor de texto">
+			<action name="Execute">
+				<execute>leafpad</execute>
+			</action>
+		</item>
+		<item label="Calculadora">
+			<action name="Execute">
+				<execute>galculator</execute>
+			</action>
+		</item>
+		<item label="Capturar Pantalla">
+			<action name="Execute">
+				<execute>~/.config/openbox/scripts/screenshot.sh</execute>
+			</action>
+		</item>
+		<item label="Visor de documentos">
+			<action name="Execute">
+				<execute>evince</execute>
+			</action>
+		</item>
+		<item label="Visor de imágenes">
+			<action name="Execute">
+				<execute>gpicview</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-fileman-menu" label="Gestores de archivos">
+		<item label="Gestor de archivos">
+			<action name="Execute">
+				<command>pcmanfm</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Gestor de archivadores">
+			<action name="Execute">
+				<execute>file-roller</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-net-menu" label="Internet">
+		<item label="luakit">
+			<action name="Execute">
+				<execute>luakit</execute>
+			</action>
+		</item>
+		<item label="dwb">
+			<action name="Execute">
+				<execute>dwb</execute>
+			</action>
+		</item>
+		<item label="Chromium">
+			<action name="Execute">
+				<execute>chromium</execute>
+			</action>
+		</item>
+		<item label="Transmission">
+			<action name="Execute">
+				<execute>transmission-gtk</execute>
+			</action>
+		</item>
+		<item label="Hamachi">
+			<action name="Execute">
+				<execute>haguichi</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-games-menu" label="Juegos">
+		<item label="Portal">
+			<action name="Execute">
+				<execute>primusrun steam steam://rungameid/400</execute>
+			</action>
+		</item>
+		<item label="GTA: San Andreas">
+			<action name="Execute">
+				<execute>primusrun playonlinux --run &quot;Grand Theft Auto : San Andreas&quot; %F</execute>
+			</action>
+		</item>
+		<item label="Metin2 Guabina">
+			<action name="Execute">
+				<execute>optirun -b virtualgl playonlinux --run &quot;Metin2 Guabina&quot; %F</execute>
+			</action>
+		</item>
+		<item label="World Of Tanks">
+			<action name="Execute">
+				<execute>optirun -b virtualgl playonlinux --run &quot;World Of Tanks&quot; %F</execute>
+			</action>
+		</item>
+		<item label="Slender">
+			<action name="Execute">
+				<execute>primusrun playonlinux --run &quot;Slender&quot; %F</execute>
+			</action>
+		</item>
+		<item label="Minecraft">
+			<action name="Execute">
+				<execute>primusrun java -jar .minecraft/MinecraftSP.jar</execute>
+			</action>
+		</item>
+		<item label="Final Fantasy VII">
+			<action name="Execute">
+				<execute>aoss optirun -b virtualgl epsxe -nogui -loadiso ~/Datos/Juegos/PSX/Final\ Fantasy\ VII-CD2.iso</execute>
+			</action>
+		</item>
+		<item label="Final Fantasy X">
+			<action name="Execute">
+				<execute>optirun -b virtualgl pcsx2 --fullscreen --nogui --gamefixes=IpuWait ~/Datos/Juegos/PS2/Final\ Fantasy\ X.iso</execute>
+			</action>
+		</item>
+		<item label="Crash Bandicoot 3: Warped">
+			<action name="Execute">
+				<execute>aoss optirun -b virtualgl epsxe -nogui -loadiso ~/Datos/Juegos/PSX/Crash\ Bandicoot\ 3:\ Warped.img</execute>
+			</action>
+		</item>
+		<item label="pSX">
+			<action name="Execute">
+				<execute>optirun -b virtualgl pSX</execute>
+			</action>
+		</item>
+		<item label="ePSXe">
+			<action name="Execute">
+				<execute>aoss optirun -b virtualgl epsxe</execute>
+			</action>
+		</item>
+		<item label="Emulador NES">
+			<action name="Execute">
+				<execute>optirun fceux</execute>
+			</action>
+		</item>
+		<item label="Steam">
+			<action name="Execute">
+				<execute>primusrun steam</execute>
+			</action>
+		</item>
+		<item label="Playonlinux">
+			<action name="Execute">
+				<execute>optirun -b virtualgl playonlinux</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-office-menu" label="Oficina">
+		<item label="LibreOffice">
+			<action name="Execute">
+				<execute>libreoffice</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-development-menu" label="Desarroyo">
+		<item label="Netbeans">
+			<action name="Execute">
+				<execute>netbeans --laf GTK</execute>
+			</action>
+		</item>
+		<item label="LogicWorks">
+			<action name="Execute">
+				<execute>playonlinux --run &quot;LogicWorks&quot;</execute>
+			</action>
+		</item>
+		<item label="Schematics">
+			<action name="Execute">
+				<execute>playonlinux --run &quot;Schematics&quot; %F</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-multimedia-menu" label="Multimedia">
+		<item label="Reproductor multimedia VLC">
+			<action name="Execute">
+				<execute>vlc</execute>
+			</action>
+		</item>
+		<item label="Conversor de sonido">
+			<action name="Execute">
+				<execute>soundconverter</execute>
+			</action>
+		</item>
+		<item label="Audacity">
+			<action name="Execute">
+				<execute>audacity</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-graphics-menu" label="Graficos">
+		<item label="Gimp">
+			<action name="Execute">
+				<command>gimp</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Google Earth">
+			<action name="Execute">
+				<execute>optirun -b virtualgl google-earth6</execute>
+			</action>
+		</item>
+		<item label="Inkscape">
+			<action name="Execute">
+				<command>inkscape</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Escaner">
+			<action name="Execute">
+				<execute>xsane</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-term-menu" label="Terminales">
+		<item label="LXTerminal">
+			<action name="Execute">
+				<execute>lxterminal</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="system-menu" label="Sistema">
+		<item label="Configuración General">
+			<action name="Execute">
+				<command>obconf</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Apariencia y Comportamiento">
+			<action name="Execute">
+				<execute>lxappearance</execute>
+			</action>
+		</item>
+		<item label="Editor del menú">
+			<action name="Execute">
+				<execute>obmenu</execute>
+			</action>
+		</item>
+		<item label="Teclas de acceso rapido">
+			<action name="Execute">
+				<execute>obkey</execute>
+			</action>
+		</item>
+		<item label="Configuración de red">
+			<action name="Execute">
+				<execute>wicd-gtk -n</execute>
+			</action>
+		</item>
+		<item label="Pantallas">
+			<action name="Execute">
+				<execute>lxrandr</execute>
+			</action>
+		</item>
+		<item label="Salvapantallas">
+			<action name="Execute">
+				<execute>xscreensaver-demo</execute>
+			</action>
+		</item>
+		<item label="Impresoras">
+			<action name="Execute">
+				<execute>dwb http://localhost:631/</execute>
+			</action>
+		</item>
+		<item label="Notificaciones">
+			<action name="Execute">
+				<execute>notifyconf</execute>
+			</action>
+		</item>
+		<item label="Editor de particiones">
+			<action name="Execute">
+				<execute>gksu gparted</execute>
+			</action>
+		</item>
+		<item label="VirtualBox">
+			<action name="Execute">
+				<execute>VirtualBox</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Reconfigure Openbox">
+			<action name="Reconfigure"/>
+		</item>
+	</menu>
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="Applications"/>
+		<menu id="apps-accessories-menu"/>
+		<menu id="apps-fileman-menu"/>
+		<menu id="apps-net-menu"/>
+		<menu id="apps-games-menu"/>
+		<menu id="apps-office-menu"/>
+		<menu id="apps-development-menu"/>
+		<menu id="apps-multimedia-menu"/>
+		<menu id="apps-graphics-menu"/>
+		<menu id="apps-term-menu"/>
+		<separator label="System"/>
+		<menu id="system-menu"/>
+		<separator/>
+		<item label="Salir">
+			<action name="Execute">
+				<execute>oblogout</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
